@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareBoard - ChongQing - Mountain City</title>
+    <meta name="description" content="Mountain City- Chongqing network is a travel portal, tour Chongqing must see. This site provides information on Chongqing scenic spots, Chongqing travel tips, Chongqing tours around Chongqing, Chongqing specialties, Chongqing food, etc.">
+    <meta name="keywords" content="Chongqing, Travel, Chongqing Travel Tips, Chongqing Attractions, Chongqing Snacks, Chongqing Specialties, Chongqing Gourmet, Chongqing Tour Routes">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default nav-self">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collaplsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1 class="logo"><a class="navbar-brand" href="#" title="ChongQing">ChongQing</a></h1>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./hotpot.html">Hotpot</a></li>
+                        <li><a href="./snack.html">Snacks</a></li>
+                        <li><a href="./attractions.html">Attractions</a></li>
+                        <li><a href="./history.html">History & Humanities</a></li>
+                        <li class="active"><a href="./board.html">Share Board</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="web-top container">
+        <h2 class="web-title" style="color: rgb(158, 202, 250);">ChongQing Share Board</h2>
+        <div class="web-intro">
+            <p>You can share everything about ChongQing here!</p>
+        </div>
+    </div>
+
+    <section class="comment container">
+        <div class="comment-list">
+            <h3>Recently Share</h3>
+            <ul id="commentList" class="list-detail"></ul>
+        </div>
+        <div class="comment-form">
+            <h3>Share your idea here</h3>
+            <form>
+                <div class="form-group inline col-md-6">
+                    <label for="inputName" class="control-label">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                </div>
+                <div class="form-group inline col-md-6">
+                    <label for="inputEmail" class="control-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="inputText" class="control-label">Comment Content</label>
+                    <textarea class="form-control" rows="3" id="inputText" placeholder="Type your Comment"
+                        style="resize: none;"></textarea>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <button type="submit" class="btn btn-default" id="comment-btn">Share</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="info col-md-6 col-xs-12">
+                <p>COMP1021 Introduction to Web Technologies</p>
+                <p>School of Leeds, Swjtu-Leeds University, Chengdu, Sichuan Province</p>
+                <p>Swjtu Student ID:2020110037</p>
+                <p>Leeds Student ID:201487660</p>
+                <p>Email: sc20l2d@leeds.ac.uk</p>
+            </div>
+            <div class="other col-md-6 col-xs-12">
+                <p>All imagess from Internet</p>
+                <hr />
+                <div id="he-plugin-standard"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- jQuery.js -->
+<script src="./lib/jquery.min.js"></script>
+<!-- Bootstrap.js -->
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<!-- Baidu Map Service Component -->
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=5hzC9I6bdBznQS8QxT3pBexElImaQc4R"></script>
+<!-- My JavaScript -->
+<script src="./js/board.js"></script>
+
+<!-- Weather Config -->
+<script>
+    WIDGET = {
+        "CONFIG": {
+            "layout": "1",
+            "width": "240",
+            "height": "140",
+            "background": "2",
+            "dataColor": "666666",
+            "language": "en",
+            "borderRadius": "5",
+            "city": "CN101040100",
+            "modules": "10",
+            "key": "b755e8830aa14072922e813de55e2429"
+        }
+    }
+</script>
+<!-- Weather Service Component -->
+<script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+
+</html>
